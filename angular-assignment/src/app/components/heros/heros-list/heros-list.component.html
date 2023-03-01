@@ -1,0 +1,26 @@
+<div class="main-div">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Birth Year</th>
+        <th>Homeworld</th>
+        <th>Species</th>
+        <th>Film</th>
+        
+      </tr>
+    </thead>
+    <tbody *ngFor="let hero of herosList">
+
+
+      <tr>
+        <td>{{hero.name}}</td>
+        <td>{{hero.birth_year}}</td>
+        <td>{{hero.planet}} </td>
+        <td>{{hero.speciesName || ' -- ' }} </td>
+        <td>{{ hero.filmName }}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
